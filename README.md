@@ -5,7 +5,7 @@
 
 ---
 
-## ⚡ TL;DR
+## ⚡ TL / DR
 
 Banks watch money move for two reasons: **catching launderers** and **avoiding cash crunches**. Today they do both badly — overnight batch jobs, single-transaction rules, and slow spreadsheets, when the real answer is sitting in the *shape* of how money flows between accounts.
 
@@ -54,7 +54,7 @@ Money moving between accounts is a **graph**:
 
 ---
 
-## 👥 Who Actually Uses This
+## 👥 Who Actually Uses This? 
 
 | Who | What they're staring at right now | What Confluence gives them |
 |---|---|---|
@@ -72,22 +72,22 @@ These people already exist, already have budget, already have a mandate. This up
 Transactions stream in
         │
         ▼
- ☁️  Cloud Storage  →  🧹 cuDF cleaning  →  🗄️ BigQuery warehouse
+  Cloud Storage  →   cuDF cleaning  →   BigQuery warehouse
         │
         ▼
- 🕸️  Live Transaction Graph  (cuGraph)
+   Live Transaction Graph  (cuGraph)
         │
    ┌────┴────┐
    ▼         ▼
-🕵️ AML Lens   💧 Liquidity Lens
+ AML Lens    Liquidity Lens
 (mule-ring    (cash-flow gap
  structure)    forecasting)
    └────┬────┘
         ▼
- 🤖 Multi-Agent Advisory Layer
+  Multi-Agent Advisory Layer
         │
         ▼
- 📊 Ranked case queue + alerts  →  Looker dashboard
+  Ranked case queue + alerts  →  Looker dashboard
 ```
 
 ---
@@ -98,16 +98,16 @@ Instead of one black-box model, four specialists — because a real investigator
 
 | Agent | Job |
 |---|---|
-| 🕸️ **Graph Builder** | Keeps the live transaction graph current as data streams in |
-| 🕵️ **AML Pattern Agent** | Hunts for mule-ring structure using cuGraph |
-| 💧 **Liquidity Forecast Agent** | Predicts cash-flow gaps before they happen |
-| 🧑‍⚖️ **Case Coordinator** | Merges both signals, prioritizes the queue, writes the plain-language brief |
+|  **Graph Builder** | Keeps the live transaction graph current as data streams in |
+| **AML Pattern Agent** | Hunts for mule-ring structure using cuGraph |
+|  **Liquidity Forecast Agent** | Predicts cash-flow gaps before they happen |
+| **Case Coordinator** | Merges both signals, prioritizes the queue, writes the plain-language brief |
 
 *Runs on Gemini Enterprise Agent Platform, deployed on GKE — each agent scales independently (only the graph-crunching agents need GPU nodes).*
 
 ---
 
-## ⚡ Why Speed Isn't a Buzzword Here
+## ⚡ Why Speed Isn't a Buzzword Here? 
 
 This is the part that actually matters to the judges — acceleration isn't "nice," it's the line between two completely different outcomes:
 
@@ -144,7 +144,11 @@ This is the part that actually matters to the judges — acceleration isn't "nic
 
 ## 📊 Data
 
-Real bank data can't be used (privacy/regulation) — so this runs on **public synthetic AML transaction-graph datasets** (e.g. IBM AMLSim or similar), scaled to millions of transactions to reflect real bank volume. This is standard practice in AML research, not a shortcut.
+-->Real bank data can't be used (privacy/regulation) — so this runs on **public synthetic AML transaction-graph datasets** (e.g. IBM AMLSim or similar),
+
+--> scaled to millions of transactions to reflect real bank volume. 
+
+-->This is standard practice in AML research, not a shortcut.
 
 ---
 
