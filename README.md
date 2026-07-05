@@ -13,6 +13,20 @@ Banks watch money move for two reasons: **catching launderers** and **avoiding c
 
 ---
 
+## ✅ Brief Alignment (Track 2 — Data Intelligence Tool)
+
+| Brief requirement | How Confluence meets it |
+|---|---|
+| **Clear real-world user & problem** | AML compliance investigators + treasury analysts at any bank — existing roles, existing mandate, existing budget (see "Who Actually Uses This") |
+| **A specific decision that depends on data** | *"Is this account cluster a real mule ring, and how urgently should I escalate it?"* / *"Is a liquidity gap forming here, and do we need to act before it becomes a crunch?"* |
+| **Pipeline: ingest → clean → analyze → model → visualize** | Cloud Storage (ingest) → cuDF (clean) → BigQuery (structure) → cuGraph/cuML (analyze & model) → Looker + agent layer (visualize/decide) |
+| **Useful output** | Ranked case queue, risk scores per cluster, liquidity early-warning alerts, plain-language evidence brief |
+| **Evidence acceleration improves the decision** | Near-real-time graph scoring vs overnight batch = money can still be frozen / crunch can still be averted, not discovered after the fact (see "Why Speed Isn't a Buzzword Here" + benchmark table) |
+| **2+ Google Cloud tools used** | Cloud Storage, BigQuery, GKE, Gemini Enterprise Agent Platform, Looker *(5 used)* |
+| **2+ NVIDIA acceleration tools used** | NVIDIA RAPIDS (cuDF, cuGraph, cuML), NVIDIA GPUs on Google Cloud *(directly covers 2 of the 4 listed categories)* |
+
+---
+
 ## 🔍 The Problem, In Two Scenes
 
 **Scene 1 — The Compliance Floor**
@@ -110,11 +124,21 @@ This is the part that actually matters to the judges — acceleration isn't "nic
 
 ## 🧰 Stack
 
-**Google Cloud**
-`Cloud Storage` → landing zone · `BigQuery` → warehouse · `Gemini Enterprise Agent Platform` → agent orchestration · `GKE` → deployment/scaling · `Looker` → dashboard
+**Google Cloud — Data & Application Layer**
+| Tool | Role in Confluence |
+|---|---|
+| `Cloud Storage` | Landing zone for raw transaction data |
+| `BigQuery` | Structured warehouse for transactions, case history, outcomes |
+| `Gemini Enterprise Agent Platform` | Multi-agent orchestration |
+| `Google Kubernetes Engine (GKE)` | Deploys & independently scales each agent |
+| `Looker` | Compliance/treasury dashboard, case queue, network visualizations |
 
-**NVIDIA**
-`cuDF / cudf.pandas` → fast cleaning · `cuGraph` → graph analysis · `cuML / XGBoost (GPU)` → risk scoring & forecasting · `NVIDIA GPUs on Google Cloud` → compute
+**NVIDIA — Acceleration Layer**
+| Tool | Role in Confluence |
+|---|---|
+| `NVIDIA RAPIDS` | Umbrella suite powering cuDF (cleaning), cuGraph (graph analysis), cuML (scoring/forecasting) |
+| `cuDF / cudf.pandas` | GPU-accelerated cleaning & feature engineering, same code as pandas |
+| `NVIDIA GPUs on Google Cloud` | Underlying compute for all of the above |
 
 ---
 
