@@ -1,0 +1,11 @@
+cudf-cu12
+cugraph-cu12
+cuml-cu12
+pandas
+numpy
+networkx
+scikit-learn
+streamlit
+plotly
+google-generativeai
+kaggle
