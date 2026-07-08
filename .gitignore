@@ -1,5 +1,4 @@
 data/
-outputs/
 
 *.parquet
 *.csv
