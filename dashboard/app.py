@@ -432,7 +432,8 @@ ANALYZING<br>NETWORK
     st.markdown("<br><br>", unsafe_allow_html=True)
 
     # 4. Network Chart (Stacked)
-    st.markdown('<div class="card-title" style="margin-bottom: -15px; margin-left: 10px;">NETWORK CLUSTERS MAP</div>', unsafe_allow_html=True)
+    st.markdown('<div class="card-title" style=" margin-top: 1.5rem; margin-bottom: -15px; margin-left: 10px;">NETWORK CLUSTERS MAP</div>', unsafe_allow_html=True)
+    st.markdown("<div style='height: 0.75rem;'></div>", unsafe_allow_html=True)
     
     G = nx.random_geometric_graph(30, 0.35, seed=42)
     pos = nx.spring_layout(G, seed=42)
@@ -455,12 +456,12 @@ ANALYZING<br>NETWORK
     node_trace = go.Scatter(x=node_x, y=node_y, mode='markers', hoverinfo='none', marker=dict(showscale=False, color=colors, size=sizes, line_width=0))
 
     fig_net = go.Figure(data=[edge_trace, node_trace],
-                 layout=go.Layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', showlegend=False, hovermode='closest', margin=dict(b=0,l=0,r=0,t=0), height=450, xaxis=dict(showgrid=False, zeroline=False, showticklabels=False), yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+                 layout=go.Layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', showlegend=False, hovermode='closest', margin=dict(b=20,l=0,r=0,t=10), height=450, xaxis=dict(showgrid=False, zeroline=False, showticklabels=False), yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
                  )
     # The CSS [data-testid="stPlotlyChart"] automatically wraps this in a glass card.
     st.plotly_chart(fig_net, use_container_width=True, config={'displayModeBar': False})
     
-    st.markdown("""<div style="font-size:0.85rem; color:#888; margin-top: -20px; margin-bottom: 20px; margin-left: 10px;"><span style="color:#DFFF41; font-size:1.2rem; vertical-align: middle; margin-right: 8px;">●</span> High Risk Structural Cluster Detected</div>""", unsafe_allow_html=True)
+    st.markdown("""<div style="font-size:0.85rem; color:#888; margin-top: 1.5rem; margin-bottom: 20px; margin-left: 10px;"><span style="color:#DFFF41; font-size:1.2rem; vertical-align: middle; margin-right: 8px;">●</span> High Risk Structural Cluster Detected</div>""", unsafe_allow_html=True)
 
     st.markdown("<br><br>", unsafe_allow_html=True)
 
