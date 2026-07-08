@@ -17,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-OUTPUT_DIR = r"C:\Users\Sanjita\.gemini\antigravity\scratch\confluence\outputs"
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs")
 
 # ─── GPU DETECTION ───────────────────────────────────────────────────────────
 GPU_BACKEND = "CPU (pandas / NetworkX)"
