@@ -281,7 +281,7 @@ h1.confluence-title {
     white-space: normal;
     word-break: keep-all;
 }.subtitle { font-family: 'Manrope', sans-serif; font-size: clamp(0.6rem, 1vw, 0.85rem); font-weight: 700; letter-spacing: 0.4em; color: #DFFF41; text-transform: uppercase; margin-bottom: 2rem; }
-.card-title { font-family: 'Manrope', sans-serif; font-size: 1rem; line-height: 1.6; letter-spacing: 0.2em; color: #A0A0A0; text-transform: uppercase; margin: 0 0 1.5rem 0; padding-top: 0.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.card-title { font-family: 'Manrope', sans-serif; font-size: 1rem; line-height: 1.6; letter-spacing: 0.2em; color: #A0A0A0; text-transform: uppercase; margin-top: 0.5rem; margin: 0 0 1.5rem 0; padding-top: 0.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
 /* Glass Cards for Metrics and Tables */
 .glass-card { background: rgba(20, 20, 22, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(12px); animation: fadeInUp 0.6s ease-out forwards; margin-bottom: 2rem;}
 .metric-val { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3vw, 3.5rem); color: #DFFF41; line-height: 1; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 12px; white-space: nowrap; }
