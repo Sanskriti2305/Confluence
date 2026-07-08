@@ -20,6 +20,11 @@ st.set_page_config(
 OUTPUT_DIR = os.path.normpath(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs")
 )
+st.sidebar.write("CWD:", os.getcwd())
+st.sidebar.write("OUTPUT_DIR:", OUTPUT_DIR)
+st.sidebar.write("Exists:", os.path.exists(OUTPUT_DIR))
+if os.path.exists(OUTPUT_DIR):
+    st.sidebar.write("Files:", os.listdir(OUTPUT_DIR))
 # ─── GPU DETECTION ───────────────────────────────────────────────────────────
 GPU_BACKEND = "CPU (pandas / NetworkX)"
 try:
