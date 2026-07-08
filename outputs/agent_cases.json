@@ -1,0 +1,970 @@
+[
+  {
+    "cluster_id": "LIQ-C1677795071",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 1.0,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 1,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 1.0,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1677795071 liquidity gap risk. Account C1677795071 is forecast to pay out $571,049 more than it takes in over the next 7 days (inflow $0 vs outflow $571,049)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1677795071 liquidity gap risk. Account C1677795071 is forecast to pay out $571,049 more than it takes in over the next 7 days (inflow $0 vs outflow $571,049).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 1
+    },
+    "raw": {
+      "entity_id": "C1677795071",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 1.0,
+      "gap_amount": 571049.22,
+      "predicted_inflow_next_7d": 0.0,
+      "predicted_outflow_next_7d": 571049.22,
+      "explanation": "Account C1677795071 is forecast to pay out $571,049 more than it takes in over the next 7 days (inflow $0 vs outflow $571,049).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1999539787",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 1.0,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 2,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 1.0,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1999539787 liquidity gap risk. Account C1999539787 is forecast to pay out $1,016,943 more than it takes in over the next 7 days (inflow $0 vs outflow $1,016,943)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1999539787 liquidity gap risk. Account C1999539787 is forecast to pay out $1,016,943 more than it takes in over the next 7 days (inflow $0 vs outflow $1,016,943).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 2
+    },
+    "raw": {
+      "entity_id": "C1999539787",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 1.0,
+      "gap_amount": 1016942.54,
+      "predicted_inflow_next_7d": 0.0,
+      "predicted_outflow_next_7d": 1016942.54,
+      "explanation": "Account C1999539787 is forecast to pay out $1,016,943 more than it takes in over the next 7 days (inflow $0 vs outflow $1,016,943).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C400299098",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 1.0,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 3,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 1.0,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C400299098 liquidity gap risk. Account C400299098 is forecast to pay out $325,286 more than it takes in over the next 7 days (inflow $0 vs outflow $325,286)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C400299098 liquidity gap risk. Account C400299098 is forecast to pay out $325,286 more than it takes in over the next 7 days (inflow $0 vs outflow $325,286).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 3
+    },
+    "raw": {
+      "entity_id": "C400299098",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 1.0,
+      "gap_amount": 325285.54,
+      "predicted_inflow_next_7d": 0.0,
+      "predicted_outflow_next_7d": 325285.54,
+      "explanation": "Account C400299098 is forecast to pay out $325,286 more than it takes in over the next 7 days (inflow $0 vs outflow $325,286).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0004",
+    "pattern_type": "circular_flow",
+    "n_accounts": 6,
+    "final_priority": 0.9333,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "Critical",
+    "priority_rank": 4,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.9333,
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "evidence": [
+        "Structural risk score 0.93 for a circular flow pattern.",
+        "6 accounts moved $314,302 in 2.0 hours.",
+        "High velocity: ~$157,151/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Circular Flow \u2014 6 accounts, $314,302 moved in 2.0 hours. 6 accounts passing money in a closed loop within 2.0 hours, moving $314,302 total.",
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "time_to_act_hours": 4,
+      "priority_rank": 4
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0004",
+      "n_accounts": 6,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.9333,
+      "severity": "Critical",
+      "total_amount_involved": 314301.57,
+      "time_window_hours": 2.0,
+      "evidence": [
+        "Structural risk score 0.93 for a circular flow pattern.",
+        "6 accounts moved $314,302 in 2.0 hours.",
+        "High velocity: ~$157,151/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ],
+      "description": "6 accounts passing money in a closed loop within 2.0 hours, moving $314,302 total.",
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "freeze_recommended": true
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1797311698",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.9057,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 5,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.9056630309079542,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1797311698 liquidity gap risk. Account C1797311698 is forecast to pay out $10,782,462 more than it takes in over the next 7 days (inflow $1,253,731 vs outflow $12,036,193)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1797311698 liquidity gap risk. Account C1797311698 is forecast to pay out $10,782,462 more than it takes in over the next 7 days (inflow $1,253,731 vs outflow $12,036,193).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 5
+    },
+    "raw": {
+      "entity_id": "C1797311698",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.9056630309079542,
+      "gap_amount": 10782462.0,
+      "predicted_inflow_next_7d": 1253731.18,
+      "predicted_outflow_next_7d": 12036193.19,
+      "explanation": "Account C1797311698 is forecast to pay out $10,782,462 more than it takes in over the next 7 days (inflow $1,253,731 vs outflow $12,036,193).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C2125771441",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.905,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 6,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.9049989821529328,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C2125771441 liquidity gap risk. Account C2125771441 is forecast to pay out $2,132,970 more than it takes in over the next 7 days (inflow $250,166 vs outflow $2,383,137)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C2125771441 liquidity gap risk. Account C2125771441 is forecast to pay out $2,132,970 more than it takes in over the next 7 days (inflow $250,166 vs outflow $2,383,137).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 6
+    },
+    "raw": {
+      "entity_id": "C2125771441",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.9049989821529328,
+      "gap_amount": 2132970.28,
+      "predicted_inflow_next_7d": 250166.49,
+      "predicted_outflow_next_7d": 2383136.77,
+      "explanation": "Account C2125771441 is forecast to pay out $2,132,970 more than it takes in over the next 7 days (inflow $250,166 vs outflow $2,383,137).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C4168202",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.9017,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 7,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.9016733626540206,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C4168202 liquidity gap risk. Account C4168202 is forecast to pay out $1,386,236 more than it takes in over the next 7 days (inflow $169,670 vs outflow $1,555,906)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C4168202 liquidity gap risk. Account C4168202 is forecast to pay out $1,386,236 more than it takes in over the next 7 days (inflow $169,670 vs outflow $1,555,906).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 7
+    },
+    "raw": {
+      "entity_id": "C4168202",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.9016733626540206,
+      "gap_amount": 1386235.62,
+      "predicted_inflow_next_7d": 169670.06,
+      "predicted_outflow_next_7d": 1555905.68,
+      "explanation": "Account C4168202 is forecast to pay out $1,386,236 more than it takes in over the next 7 days (inflow $169,670 vs outflow $1,555,906).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1993692066",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8791,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 8,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8791016798449487,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1993692066 liquidity gap risk. Account C1993692066 is forecast to pay out $1,130,908 more than it takes in over the next 7 days (inflow $180,327 vs outflow $1,311,235)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1993692066 liquidity gap risk. Account C1993692066 is forecast to pay out $1,130,908 more than it takes in over the next 7 days (inflow $180,327 vs outflow $1,311,235).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 8
+    },
+    "raw": {
+      "entity_id": "C1993692066",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8791016798449487,
+      "gap_amount": 1130907.82,
+      "predicted_inflow_next_7d": 180327.42,
+      "predicted_outflow_next_7d": 1311235.24,
+      "explanation": "Account C1993692066 is forecast to pay out $1,130,908 more than it takes in over the next 7 days (inflow $180,327 vs outflow $1,311,235).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0003",
+    "pattern_type": "circular_flow",
+    "n_accounts": 6,
+    "final_priority": 0.8727,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "Critical",
+    "priority_rank": 9,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8727,
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "evidence": [
+        "Structural risk score 0.87 for a circular flow pattern.",
+        "6 accounts moved $278,798 in 2.7 hours.",
+        "High velocity: ~$104,419/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Circular Flow \u2014 6 accounts, $278,798 moved in 2.7 hours. 6 accounts passing money in a closed loop within 2.7 hours, moving $278,798 total.",
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "time_to_act_hours": 4,
+      "priority_rank": 9
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0003",
+      "n_accounts": 6,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.8727,
+      "severity": "Critical",
+      "total_amount_involved": 278797.95,
+      "time_window_hours": 2.67,
+      "evidence": [
+        "Structural risk score 0.87 for a circular flow pattern.",
+        "6 accounts moved $278,798 in 2.7 hours.",
+        "High velocity: ~$104,419/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ],
+      "description": "6 accounts passing money in a closed loop within 2.7 hours, moving $278,798 total.",
+      "recommended_action": "Escalate immediately \u2014 freeze accounts, file SAR within 24h",
+      "freeze_recommended": true
+    }
+  },
+  {
+    "cluster_id": "LIQ-C2057159997",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8665,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 10,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8665446313615877,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C2057159997 liquidity gap risk. Account C2057159997 is forecast to pay out $1,180,072 more than it takes in over the next 7 days (inflow $214,826 vs outflow $1,394,899)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C2057159997 liquidity gap risk. Account C2057159997 is forecast to pay out $1,180,072 more than it takes in over the next 7 days (inflow $214,826 vs outflow $1,394,899).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 10
+    },
+    "raw": {
+      "entity_id": "C2057159997",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8665446313615877,
+      "gap_amount": 1180072.43,
+      "predicted_inflow_next_7d": 214826.5,
+      "predicted_outflow_next_7d": 1394898.93,
+      "explanation": "Account C2057159997 is forecast to pay out $1,180,072 more than it takes in over the next 7 days (inflow $214,826 vs outflow $1,394,899).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C755643476",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8649,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 11,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8649322680389169,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C755643476 liquidity gap risk. Account C755643476 is forecast to pay out $1,233,772 more than it takes in over the next 7 days (inflow $228,320 vs outflow $1,462,093)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C755643476 liquidity gap risk. Account C755643476 is forecast to pay out $1,233,772 more than it takes in over the next 7 days (inflow $228,320 vs outflow $1,462,093).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 11
+    },
+    "raw": {
+      "entity_id": "C755643476",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8649322680389169,
+      "gap_amount": 1233772.36,
+      "predicted_inflow_next_7d": 228320.23,
+      "predicted_outflow_next_7d": 1462092.59,
+      "explanation": "Account C755643476 is forecast to pay out $1,233,772 more than it takes in over the next 7 days (inflow $228,320 vs outflow $1,462,093).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1642860439",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8645,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 12,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8644529684478502,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1642860439 liquidity gap risk. Account C1642860439 is forecast to pay out $1,008,696 more than it takes in over the next 7 days (inflow $187,577 vs outflow $1,196,272)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1642860439 liquidity gap risk. Account C1642860439 is forecast to pay out $1,008,696 more than it takes in over the next 7 days (inflow $187,577 vs outflow $1,196,272).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 12
+    },
+    "raw": {
+      "entity_id": "C1642860439",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8644529684478502,
+      "gap_amount": 1008695.73,
+      "predicted_inflow_next_7d": 187576.62,
+      "predicted_outflow_next_7d": 1196272.35,
+      "explanation": "Account C1642860439 is forecast to pay out $1,008,696 more than it takes in over the next 7 days (inflow $187,577 vs outflow $1,196,272).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C266016917",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8594,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 13,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8593760003488485,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C266016917 liquidity gap risk. Account C266016917 is forecast to pay out $979,576 more than it takes in over the next 7 days (inflow $191,654 vs outflow $1,171,230)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C266016917 liquidity gap risk. Account C266016917 is forecast to pay out $979,576 more than it takes in over the next 7 days (inflow $191,654 vs outflow $1,171,230).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 13
+    },
+    "raw": {
+      "entity_id": "C266016917",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8593760003488485,
+      "gap_amount": 979575.56,
+      "predicted_inflow_next_7d": 191654.19,
+      "predicted_outflow_next_7d": 1171229.75,
+      "explanation": "Account C266016917 is forecast to pay out $979,576 more than it takes in over the next 7 days (inflow $191,654 vs outflow $1,171,230).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C267509324",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8491,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 14,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.849142051976977,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C267509324 liquidity gap risk. Account C267509324 is forecast to pay out $1,082,091 more than it takes in over the next 7 days (inflow $233,776 vs outflow $1,315,867)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C267509324 liquidity gap risk. Account C267509324 is forecast to pay out $1,082,091 more than it takes in over the next 7 days (inflow $233,776 vs outflow $1,315,867).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 14
+    },
+    "raw": {
+      "entity_id": "C267509324",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.849142051976977,
+      "gap_amount": 1082091.36,
+      "predicted_inflow_next_7d": 233776.02,
+      "predicted_outflow_next_7d": 1315867.39,
+      "explanation": "Account C267509324 is forecast to pay out $1,082,091 more than it takes in over the next 7 days (inflow $233,776 vs outflow $1,315,867).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1327438670",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8405,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 15,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8404948932029106,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1327438670 liquidity gap risk. Account C1327438670 is forecast to pay out $776,813 more than it takes in over the next 7 days (inflow $181,949 vs outflow $958,762)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1327438670 liquidity gap risk. Account C1327438670 is forecast to pay out $776,813 more than it takes in over the next 7 days (inflow $181,949 vs outflow $958,762).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 15
+    },
+    "raw": {
+      "entity_id": "C1327438670",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8404948932029106,
+      "gap_amount": 776812.93,
+      "predicted_inflow_next_7d": 181949.32,
+      "predicted_outflow_next_7d": 958762.24,
+      "explanation": "Account C1327438670 is forecast to pay out $776,813 more than it takes in over the next 7 days (inflow $181,949 vs outflow $958,762).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C834632239",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8338,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 16,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8337584311468794,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C834632239 liquidity gap risk. Account C834632239 is forecast to pay out $967,559 more than it takes in over the next 7 days (inflow $240,965 vs outflow $1,208,524)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C834632239 liquidity gap risk. Account C834632239 is forecast to pay out $967,559 more than it takes in over the next 7 days (inflow $240,965 vs outflow $1,208,524).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 16
+    },
+    "raw": {
+      "entity_id": "C834632239",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8337584311468794,
+      "gap_amount": 967558.97,
+      "predicted_inflow_next_7d": 240965.48,
+      "predicted_outflow_next_7d": 1208524.45,
+      "explanation": "Account C834632239 is forecast to pay out $967,559 more than it takes in over the next 7 days (inflow $240,965 vs outflow $1,208,524).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1594844642",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8172,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 17,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8172349400359543,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1594844642 liquidity gap risk. Account C1594844642 is forecast to pay out $538,635 more than it takes in over the next 7 days (inflow $155,159 vs outflow $693,794)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1594844642 liquidity gap risk. Account C1594844642 is forecast to pay out $538,635 more than it takes in over the next 7 days (inflow $155,159 vs outflow $693,794).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 17
+    },
+    "raw": {
+      "entity_id": "C1594844642",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8172349400359543,
+      "gap_amount": 538634.78,
+      "predicted_inflow_next_7d": 155158.85,
+      "predicted_outflow_next_7d": 693793.62,
+      "explanation": "Account C1594844642 is forecast to pay out $538,635 more than it takes in over the next 7 days (inflow $155,159 vs outflow $693,794).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C941144080",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8081,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 18,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8080513004271432,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C941144080 liquidity gap risk. Account C941144080 is forecast to pay out $562,545 more than it takes in over the next 7 days (inflow $175,263 vs outflow $737,808)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C941144080 liquidity gap risk. Account C941144080 is forecast to pay out $562,545 more than it takes in over the next 7 days (inflow $175,263 vs outflow $737,808).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 18
+    },
+    "raw": {
+      "entity_id": "C941144080",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8080513004271432,
+      "gap_amount": 562545.27,
+      "predicted_inflow_next_7d": 175262.74,
+      "predicted_outflow_next_7d": 737808.02,
+      "explanation": "Account C941144080 is forecast to pay out $562,545 more than it takes in over the next 7 days (inflow $175,263 vs outflow $737,808).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C67290599",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.8036,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 19,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.8036471110835844,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C67290599 liquidity gap risk. Account C67290599 is forecast to pay out $745,401 more than it takes in over the next 7 days (inflow $241,006 vs outflow $986,407)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C67290599 liquidity gap risk. Account C67290599 is forecast to pay out $745,401 more than it takes in over the next 7 days (inflow $241,006 vs outflow $986,407).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 19
+    },
+    "raw": {
+      "entity_id": "C67290599",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.8036471110835844,
+      "gap_amount": 745401.23,
+      "predicted_inflow_next_7d": 241006.22,
+      "predicted_outflow_next_7d": 986407.45,
+      "explanation": "Account C67290599 is forecast to pay out $745,401 more than it takes in over the next 7 days (inflow $241,006 vs outflow $986,407).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C441788039",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.7749,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 20,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.7749108844568139,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C441788039 liquidity gap risk. Account C441788039 is forecast to pay out $482,630 more than it takes in over the next 7 days (inflow $197,582 vs outflow $680,211)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C441788039 liquidity gap risk. Account C441788039 is forecast to pay out $482,630 more than it takes in over the next 7 days (inflow $197,582 vs outflow $680,211).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 20
+    },
+    "raw": {
+      "entity_id": "C441788039",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.7749108844568139,
+      "gap_amount": 482629.7,
+      "predicted_inflow_next_7d": 197581.65,
+      "predicted_outflow_next_7d": 680211.35,
+      "explanation": "Account C441788039 is forecast to pay out $482,630 more than it takes in over the next 7 days (inflow $197,582 vs outflow $680,211).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1541510193",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.7737,
+    "freeze_recommended": true,
+    "case_type": "Liquidity",
+    "severity": "Critical",
+    "priority_rank": 21,
+    "aml_assessment": {
+      "risk_category": "Critical",
+      "risk_score": 0.7736527592550271,
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "evidence": [
+        "[Critical] Account C1541510193 liquidity gap risk. Account C1541510193 is forecast to pay out $535,514 more than it takes in over the next 7 days (inflow $221,471 vs outflow $756,985)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[Critical] Account C1541510193 liquidity gap risk. Account C1541510193 is forecast to pay out $535,514 more than it takes in over the next 7 days (inflow $221,471 vs outflow $756,985).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line",
+      "time_to_act_hours": 4,
+      "priority_rank": 21
+    },
+    "raw": {
+      "entity_id": "C1541510193",
+      "entity_type": "account",
+      "severity": "Critical",
+      "risk_score": 0.7736527592550271,
+      "gap_amount": 535513.9,
+      "predicted_inflow_next_7d": 221470.62,
+      "predicted_outflow_next_7d": 756984.52,
+      "explanation": "Account C1541510193 is forecast to pay out $535,514 more than it takes in over the next 7 days (inflow $221,471 vs outflow $756,985).",
+      "recommended_action": "Immediate treasury review \u2014 arrange contingency funding line"
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0002",
+    "pattern_type": "circular_flow",
+    "n_accounts": 5,
+    "final_priority": 0.8,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "High",
+    "priority_rank": 22,
+    "aml_assessment": {
+      "risk_category": "High",
+      "risk_score": 0.8,
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "evidence": [
+        "Structural risk score 0.80 for a circular flow pattern.",
+        "5 accounts moved $334,219 in 2.3 hours.",
+        "High velocity: ~$143,442/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "5-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[High] Circular Flow \u2014 5 accounts, $334,219 moved in 2.3 hours. 5 accounts passing money in a closed loop within 2.3 hours, moving $334,219 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "time_to_act_hours": 24,
+      "priority_rank": 22
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0002",
+      "n_accounts": 5,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.8,
+      "severity": "High",
+      "total_amount_involved": 334219.19,
+      "time_window_hours": 2.33,
+      "evidence": [
+        "Structural risk score 0.80 for a circular flow pattern.",
+        "5 accounts moved $334,219 in 2.3 hours.",
+        "High velocity: ~$143,442/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "5-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ],
+      "description": "5 accounts passing money in a closed loop within 2.3 hours, moving $334,219 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "freeze_recommended": true
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0005",
+    "pattern_type": "circular_flow",
+    "n_accounts": 6,
+    "final_priority": 0.8,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "High",
+    "priority_rank": 23,
+    "aml_assessment": {
+      "risk_category": "High",
+      "risk_score": 0.8,
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "evidence": [
+        "Structural risk score 0.80 for a circular flow pattern.",
+        "6 accounts moved $397,951 in 4.0 hours.",
+        "High velocity: ~$99,488/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[High] Circular Flow \u2014 6 accounts, $397,951 moved in 4.0 hours. 6 accounts passing money in a closed loop within 4.0 hours, moving $397,951 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "time_to_act_hours": 24,
+      "priority_rank": 23
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0005",
+      "n_accounts": 6,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.8,
+      "severity": "High",
+      "total_amount_involved": 397950.57,
+      "time_window_hours": 4.0,
+      "evidence": [
+        "Structural risk score 0.80 for a circular flow pattern.",
+        "6 accounts moved $397,951 in 4.0 hours.",
+        "High velocity: ~$99,488/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "6-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ],
+      "description": "6 accounts passing money in a closed loop within 4.0 hours, moving $397,951 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "freeze_recommended": true
+    }
+  },
+  {
+    "cluster_id": "LIQ-C1963082624",
+    "pattern_type": "liquidity_account",
+    "n_accounts": 1,
+    "final_priority": 0.7283,
+    "freeze_recommended": false,
+    "case_type": "Liquidity",
+    "severity": "High",
+    "priority_rank": 24,
+    "aml_assessment": {
+      "risk_category": "High",
+      "risk_score": 0.7283475805707943,
+      "recommended_action": "Escalate to treasury desk; funding plan required within 48h",
+      "evidence": [
+        "[High] Account C1963082624 liquidity gap risk. Account C1963082624 is forecast to pay out $369,728 more than it takes in over the next 7 days (inflow $219,923 vs outflow $589,651)."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[High] Account C1963082624 liquidity gap risk. Account C1963082624 is forecast to pay out $369,728 more than it takes in over the next 7 days (inflow $219,923 vs outflow $589,651).",
+      "recommended_action": "Escalate to treasury desk; funding plan required within 48h",
+      "time_to_act_hours": 24,
+      "priority_rank": 24
+    },
+    "raw": {
+      "entity_id": "C1963082624",
+      "entity_type": "account",
+      "severity": "High",
+      "risk_score": 0.7283475805707943,
+      "gap_amount": 369728.49,
+      "predicted_inflow_next_7d": 219922.71,
+      "predicted_outflow_next_7d": 589651.2,
+      "explanation": "Account C1963082624 is forecast to pay out $369,728 more than it takes in over the next 7 days (inflow $219,923 vs outflow $589,651).",
+      "recommended_action": "Escalate to treasury desk; funding plan required within 48h"
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0000",
+    "pattern_type": "circular_flow",
+    "n_accounts": 5,
+    "final_priority": 0.7174,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "High",
+    "priority_rank": 25,
+    "aml_assessment": {
+      "risk_category": "High",
+      "risk_score": 0.7174,
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "evidence": [
+        "Structural risk score 0.72 for a circular flow pattern.",
+        "5 accounts moved $276,511 in 3.6 hours.",
+        "High velocity: ~$76,808/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "5-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[High] Circular Flow \u2014 5 accounts, $276,511 moved in 3.6 hours. 5 accounts passing money in a closed loop within 3.6 hours, moving $276,511 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "time_to_act_hours": 24,
+      "priority_rank": 25
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0000",
+      "n_accounts": 5,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.7174,
+      "severity": "High",
+      "total_amount_involved": 276510.59,
+      "time_window_hours": 3.6,
+      "evidence": [
+        "Structural risk score 0.72 for a circular flow pattern.",
+        "5 accounts moved $276,511 in 3.6 hours.",
+        "High velocity: ~$76,808/hour \u2014 consistent with deliberate rapid layering, not normal account activity.",
+        "5-node ring detected \u2014 complexity above typical two-party structuring; indicative of organised mule network."
+      ],
+      "description": "5 accounts passing money in a closed loop within 3.6 hours, moving $276,511 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "freeze_recommended": true
+    }
+  },
+  {
+    "cluster_id": "CLUSTER0001",
+    "pattern_type": "circular_flow",
+    "n_accounts": 4,
+    "final_priority": 0.6667,
+    "freeze_recommended": true,
+    "case_type": "AML",
+    "severity": "High",
+    "priority_rank": 26,
+    "aml_assessment": {
+      "risk_category": "High",
+      "risk_score": 0.6667,
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "evidence": [
+        "Structural risk score 0.67 for a circular flow pattern.",
+        "4 accounts moved $279,825 in 2.8 hours.",
+        "High velocity: ~$101,754/hour \u2014 consistent with deliberate rapid layering, not normal account activity."
+      ]
+    },
+    "coordinator_output": {
+      "case_summary": "[High] Circular Flow \u2014 4 accounts, $279,825 moved in 2.8 hours. 4 accounts passing money in a closed loop within 2.8 hours, moving $279,825 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "time_to_act_hours": 24,
+      "priority_rank": 26
+    },
+    "raw": {
+      "cluster_id": "CLUSTER0001",
+      "n_accounts": 4,
+      "pattern_type": "circular_flow",
+      "risk_score": 0.6667,
+      "severity": "High",
+      "total_amount_involved": 279824.75,
+      "time_window_hours": 2.75,
+      "evidence": [
+        "Structural risk score 0.67 for a circular flow pattern.",
+        "4 accounts moved $279,825 in 2.8 hours.",
+        "High velocity: ~$101,754/hour \u2014 consistent with deliberate rapid layering, not normal account activity."
+      ],
+      "description": "4 accounts passing money in a closed loop within 2.8 hours, moving $279,825 total.",
+      "recommended_action": "Open formal SAR investigation within 48h",
+      "freeze_recommended": true
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "backend": "GPU (cuGraph)",
+  "graph_build_time_sec": 1.5623,
+  "cycle_detection_time_sec": 3.8191,
+  "fan_detection_time_sec": 18.6814,
+  "total_clusters_found": 6,
+  "ground_truth_eval": {
+    "rings_planted": 6,
+    "rings_detected": 6,
+    "recall": 1.0
+  }
+}

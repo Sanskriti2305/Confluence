@@ -1,0 +1,6 @@
+{
+  "backend": "GPU (cuML)",
+  "heuristic_time_sec": 7.5625,
+  "ml_training_time_sec": 0,
+  "entities_scored": 173282
+}

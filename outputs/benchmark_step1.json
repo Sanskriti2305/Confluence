@@ -1,0 +1,6 @@
+{
+  "backend": "GPU (cudf.pandas)",
+  "rows_processed": 2854591,
+  "clean_rows": 2845059,
+  "cleaning_time_sec": 9.4006
+}
