@@ -1,0 +1,4 @@
+Pipeline Stage,CPU Time (s),GPU Time (s),Speedup,Backend Detected
+Step 1 — Data Cleaning,9.4006,pending,pending GPU run,GPU (cudf.pandas)
+Step 2 — Graph Build,1.5623,pending,pending GPU run,GPU (cuGraph)
+Step 3 — Liquidity ML Training,—,pending,pending GPU run,GPU (cuML)
