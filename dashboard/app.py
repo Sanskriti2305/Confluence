@@ -282,7 +282,7 @@ h1.confluence-title {
     white-space: normal;
     word-break: keep-all;
 }.subtitle { font-family: 'Manrope', sans-serif; font-size: clamp(0.6rem, 1vw, 0.85rem); font-weight: 700; letter-spacing: 0.4em; color: #DFFF41; text-transform: uppercase; margin-bottom: 2rem; }
-.card-title { font-family: 'Manrope', sans-serif; font-size: 1rem; line-height: 1.6; letter-spacing: 0.2em; color: #A0A0A0; text-transform: uppercase; margin-top: 0.5rem; margin: 0 0 1.5rem 0; padding-top: 0.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.card-title { font-family: 'Manrope', sans-serif; font-size: 1rem; line-height: 1.6; letter-spacing: 0.2em; color: #A0A0A0; text-transform: uppercase; margin: 0.5rem 0 1.5rem 1.5rem; padding-top: 0.25rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
 /* Glass Cards for Metrics and Tables */
 .glass-card { background: rgba(20, 20, 22, 0.5); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1.5rem; backdrop-filter: blur(12px); animation: fadeInUp 0.6s ease-out forwards; margin-bottom: 2rem;}
 .metric-val { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3vw, 3.5rem); color: #DFFF41; line-height: 1; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 12px; white-space: nowrap; }
@@ -466,6 +466,7 @@ ANALYZING<br>NETWORK
 
     # 5. Heatmap (Stacked)
     st.markdown('<div class="card-title" style="margin-bottom: -15px; margin-left: 10px;">GLOBAL LIQUIDITY RISK HEATMAP</div>', unsafe_allow_html=True)
+    st.markdown("<div style='height: 0.75rem;'></div>", unsafe_allow_html=True)
     
     df_map = pd.DataFrame({
         'lat': [37.77, 40.71, 51.5, 48.85, 35.68, -23.55, 22.31, 19.07, 1.35],
@@ -478,11 +479,11 @@ ANALYZING<br>NETWORK
     ))
     fig_map.update_layout(
         geo = dict(showland = True, landcolor = "rgba(30, 30, 32, 0.8)", showocean = True, oceancolor = "rgba(0,0,0,0)", showcountries=True, countrycolor="rgba(255,255,255,0.15)", bgcolor="rgba(0,0,0,0)", projection_type="equirectangular"),
-        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', margin=dict(l=0, r=0, t=10, b=0), height=450
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', margin=dict(l=0, r=0, t=10, b=20), height=450
     )
     st.plotly_chart(fig_map, use_container_width=True, config={'displayModeBar': False})
     
-    st.markdown("""<div style="display:flex; justify-content: space-between; font-size: 0.75rem; color: #888; text-transform: uppercase; margin-top: -20px; margin-bottom: 20px; margin-left: 10px; margin-right: 10px;"><span>Low Risk</span><div style="flex-grow: 1; height: 4px; background: linear-gradient(90deg, rgba(255,255,255,0.1), #DFFF41); margin: 6px 20px; border-radius: 2px;"></div><span style="color:#DFFF41; font-weight: bold;">High Risk</span></div>""", unsafe_allow_html=True)
+    st.markdown("""<div style="display:flex; justify-content: space-between; font-size: 0.75rem; color: #888; text-transform: uppercase;  margin-top: 1.5rem; margin-bottom: 20px; margin-left: 10px; margin-right: 10px;"><span>Low Risk</span><div style="flex-grow: 1; height: 4px; background: linear-gradient(90deg, rgba(255,255,255,0.1), #DFFF41); margin: 6px 20px; border-radius: 2px;"></div><span style="color:#DFFF41; font-weight: bold;">High Risk</span></div>""", unsafe_allow_html=True)
 
     st.markdown("<br><br>", unsafe_allow_html=True)
 
