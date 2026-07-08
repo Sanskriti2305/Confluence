@@ -255,12 +255,32 @@ background: radial-gradient(circle at 80% 0%, rgba(223, 255, 65, 0.15), transpar
 color: #F5F5F5;
 font-family: 'Manrope', sans-serif;
 }
-header[data-testid="stHeader"] { display: none; }
-.block-container { padding-top: 2rem !important; padding-bottom: 4rem !important; max-width: 1000px !important; margin: 0 auto !important; }
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    height: 3rem !important;
+}
+header[data-testid="stHeader"] svg { visibility: hidden; } /* hides the default Streamlit icons */
+
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    color: #DFFF41 !important;
+    z-index: 999999 !important;
+}
+[data-testid="collapsedControl"] svg { color: #DFFF41 !important; fill: #DFFF41 !important; }.block-container { padding-top: 2rem !important; padding-bottom: 4rem !important; max-width: 1000px !important; margin: 0 auto !important; }
 
 /* Dashboard Typography */
-h1.confluence-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 5vw, 5.5rem); font-weight: 400; line-height: 0.9; letter-spacing: -0.02em; margin-bottom: 0.2rem; color: #FFFFFF; white-space: nowrap; }
-.subtitle { font-family: 'Manrope', sans-serif; font-size: clamp(0.6rem, 1vw, 0.85rem); font-weight: 700; letter-spacing: 0.4em; color: #DFFF41; text-transform: uppercase; margin-bottom: 2rem; }
+h1.confluence-title { 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: clamp(2.2rem, 5vw, 5.5rem); 
+    font-weight: 400; 
+    line-height: 0.95; 
+    letter-spacing: -0.02em; 
+    margin-bottom: 0.2rem; 
+    color: #FFFFFF; 
+    white-space: normal;
+    word-break: keep-all;
+}.subtitle { font-family: 'Manrope', sans-serif; font-size: clamp(0.6rem, 1vw, 0.85rem); font-weight: 700; letter-spacing: 0.4em; color: #DFFF41; text-transform: uppercase; margin-bottom: 2rem; }
 .card-title { font-family: 'Manrope', sans-serif; font-size: 0.85rem; letter-spacing: 0.2em; color: #A0A0A0; text-transform: uppercase; margin-bottom: 1.2rem; font-weight: 600; }
 
 /* Glass Cards for Metrics and Tables */
@@ -366,8 +386,7 @@ if page == "🏠 Overview":
     # 1. Header
     st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-<div style="flex: 1; min-width: 300px;">
-<h1 class="confluence-title">CONFLUENCE</h1>
+<div style="flex: 1; min-width: 0; max-width: 100%;"><h1 class="confluence-title">CONFLUENCE</h1>
 <div class="subtitle">MONEY FLOW INTELLIGENCE</div>
 </div>
 <div style="text-align: right; color: #DFFF41; font-size: 0.7rem; letter-spacing: 0.2em; flex-shrink: 0; padding-bottom: 1rem;">
@@ -620,8 +639,7 @@ elif page == "⚡ Benchmark":
     
     st.markdown("""
 <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
-<div style="flex: 1; min-width: 300px;">
-<h1 class="confluence-title">BENCHMARK</h1>
+<div style="flex: 1; min-width: 0; max-width: 100%;"><h1 class="confluence-title">BENCHMARK</h1>
 <div class="subtitle">HARDWARE ACCELERATION METRICS</div>
 </div>
 </div>
